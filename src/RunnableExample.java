@@ -18,7 +18,7 @@ public class RunnableExample implements Runnable {
         for(int i = 0; i < 3; i++){
             try{
                 Thread.sleep(1000);
-                System.out.println( Thread.currentThread().getName() );
+                System.out.println( "Runnable " + Thread.currentThread().getName() );
             }catch (Exception e){
                 e.printStackTrace();
             }
